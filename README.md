@@ -1,0 +1,1 @@
+This Repo contains Day-6 problems solved by using "CLASS,SET,GET METHODS"
