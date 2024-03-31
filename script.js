@@ -84,9 +84,9 @@ console.log(movie.title,movie.studio,movie.rating);
 
 
 
-/*
-//Task - 2
 
+//Task - 2
+/*
 class Circle{
     constructor(radius,color){
         this.radius = radius;
@@ -117,7 +117,12 @@ class Circle{
 
 const circle = new Circle(1.0,"red");
 console.log(circle.radius,circle.color);
+console.log(circle.toString);
+console.log(circle.Area);
+console.log(circle.Circumference);
 
+circle.Radius = 24
+circle.Color = "Green"
 console.log(circle.Radius);
 console.log(circle.Color);
 console.log(circle.toString);
@@ -148,3 +153,23 @@ const person2 = new Person("wazim",23,"male","married",9876541230,"def@example.c
 console.log(person1.name,person1.age,person1.gender,person1.m_status,person1.contact,person1.email);
 console.log(person2.name,person2.age,person2.gender,person2.m_status,person2.contact,person2.email);
 */
+
+
+
+//Task-4
+
+class Uber{
+    constructor(km,price=50){
+        this.km = km;
+        this.price = price;
+    }
+    set Price(price){
+        this.price = price;
+    }
+    get Price(){
+        return this.km*this.price;
+    }
+}
+
+const uberPrice = new Uber(10,50);
+console.log(uberPrice.Price);
