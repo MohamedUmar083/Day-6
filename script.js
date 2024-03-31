@@ -1,6 +1,7 @@
 //Task-1
-// Task-1.a
 /*
+// Task-1.a
+
 class Movie{
     constructor(title,studio,rating){
         this.title = title;
@@ -15,8 +16,11 @@ const movie_a = new Movie("Leave_The_World_Behind","Netflix-Studio","R");
 console.log(movie_a.title,movie_a.studio,movie_a.rating);
 */
 
-//Task-1.b
+
+
 /*
+//Task-1.b
+
 class Movie{
     constructor(title,studio,rating = "PG"){
         this.title = title;
@@ -31,7 +35,7 @@ const movie_b = new Movie("Mouse","Blue-Dragon");
 console.log(movie_b.title,movie_b.studio,movie_b.rating);
 */
 
-
+/*
 //Task-1.c
 class Movie{
     constructor(title,studio,rating = "PG"){
@@ -39,30 +43,30 @@ class Movie{
         this.studio = studio;
         this.rating = rating;
     }
-    get PG(){
+   static getPG(movie){
+        const rating = movie.filter((movie)=>movie.rating==="PG")
+        console.log(rating);
 
     }
-    
 
 }
 
-const movie1 = new Movie("Casino_Royal","EON_Production","PG-13");
-console.log(movie1.title,movie1.studio,movie1.rating);
 
-const movie2 = new Movie("Vikram","RKFI","U/A");
-console.log(movie2.title,movie2.studio,movie2.rating);
+const movie = [
+    new Movie("Casino_Royal","EON_Production","PG-13"),
+    new Movie("Vikram","RKFI","U/A"),
+    new Movie("Batman","WB"),
+    new Movie("Master","7-Screen"),
+    new Movie("Interstellar","WB","PG-13")
+];
 
-const movie3 = new Movie("Batman","WB");
-console.log(movie3.title,movie3.studio,movie3.rating);
+Movie.getPG(movie);
+*/
 
-const movie4 = new Movie("Master","7-Screen");
-console.log(movie4.title,movie4.studio,movie4.rating);
 
-const movie5 = new Movie("Interstellar","WB","PG-13")
-console.log(movie5.title,movie5.studio,movie5.rating);
-
-//Task-1.d
 /*
+//Task-1.d
+
 class Movie{
     constructor(title,studio,rating){
         this.title = title;
